@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caza Store</title>
+    <link rel="icon" href="./Assets/img/icon.png">
+    <link rel="stylesheet" href="Assets/css/style.css" />
+    <link rel="stylesheet" href="Assets/css/layout.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="Assets/Font/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(window).scrollTop() > 0) {
+            $("#nav2").css({ "background-color": "white" });
+          } else {
+            $("#nav2").css({ "background-color": "#D7DBDC" });
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- navbar -->
+
+    <div
+      class="container-fluid pt-2 pb-2"
+      style="position: sticky; top: 0; z-index: 12"
+      id="nav2"
+    >
+      <div class="container">
+        <nav class="nav navbar navbar-expand-md text-center pb-2 pt-1">
+          <a href="" class="navbar-brand" style="font-family: poppins"
+            >Caza Store</a
+          >
+          <button
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navi"
+          >
+            <i class="navbar-toggler-icon"></i>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end pe-5"
+            id="navi"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link pe-4"
+                  style="font-family: poppins !important"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link pe-4"
+                  style="font-family: poppins !important"
+                  >Shop</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link pe-4"
+                  style="font-family: poppins !important"
+                  >Blog</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link pe-4"
+                  style="font-family: poppins !important"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link pe-4"
+                  style="font-family: poppins !important"
+                  >Contact</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link pe-4"
+                  style="font-family: poppins !important"
+                  >Logout</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- slidebar -->
+
+    <div
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+      id="mycarou"
+    >
+      <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div
+            class="carousel-item active"
+            style="
+              height: 650px;
+              width: 100%;
+              background-image: url(Assets/img/slide-01.jpg.webp);
+              background-size: cover;
+            "
+          >
+            <h4
+              class="animate__animated animate__delay-0.5s animate__fadeInDown"
+            >
+              Women Collection 2023
+            </h4>
+            <h1 class="animate__animated animate__delay-1s animate__fadeInUp">
+              NEW SESSION
+            </h1>
+            <button
+              class="btn btn-info text-light fw-bold animate__animated animate__delay-2s animate__zoomIn"
+              style="position: absolute; top: 48%; left: 8%"
+            >
+              Shop Now
+            </button>
+          </div>
+          <div
+            class="carousel-item"
+            style="
+              height: 650px;
+              width: 100%;
+              background-image: url(Assets/img/slide-02.jpg.webp);
+              background-size: cover;
+            "
+          >
+            <h4
+              class="animate__animated animate__delay-0.5s animate__rotateInDownLeft"
+            >
+              Man New-Season
+            </h4>
+            <h1
+              class="animate__animated animate__delay-1s animate__lightSpeedInRight"
+            >
+              Jackets & Coats
+            </h1>
+            <button
+              class="btn btn-info text-light fw-bold animate__animated animate__delay-2s animate__fadeInUp"
+              style="position: absolute; top: 48%; left: 8%"
+            >
+              Shop Now
+            </button>
+          </div>
+          <div
+            class="carousel-item"
+            style="
+              height: 650px;
+              width: 100%;
+              background-image: url(Assets/img/slide-03.jpg.webp);
+              background-size: cover;
+            "
+          >
+            <h4
+              class="animate__animated animate__delay-0.5s animate__rotateInDownLeft"
+            >
+              Man Collection 2023
+            </h4>
+            <h1
+              class="animate__animated animate__delay-1s animate__rotateInUpRight"
+            >
+              NEW ARRIVALS
+            </h1>
+            <button
+              class="btn btn-info text-light fw-bold animate__animated animate__delay-2s animate__rotateIn"
+              style="position: absolute; top: 48%; left: 8%"
+            >
+              Shop Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- product -->
+
+    <div class="container mt-5 mb-5">
+      <div class="row">
+        <div
+          class="col-lg-4 col-md-6 col-sm-12 mt-5"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <a href="" class="text-decoration-none text-dark">
+            <div
+              class="dis"
+              style="
+                background-image: url(Assets/img/img-1.jpg);
+                background-size: cover;
+              "
+            >
+              <h3
+                class="pt-4 ps-4 fw-bold"
+                style="
+                  font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+                    'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                "
+              >
+                Women
+              </h3>
+              <h6
+                class="ps-4 fw-bold"
+                style="
+                  color: #918989;
+                  font-family: Cambria, Cochin, Georgia, Times,
+                    'Times New Roman', serif;
+                "
+              >
+                Spring 2018
+              </h6>
+              <button class="btn btn-info text-light fw-bold mt-5 ms-4">
+                Shop Now
+              </button>
+            </div></a
+          >
+        </div>
+        <div
+          class="col-lg-4 col-md-6 col-sm-12 mt-5"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <a href="" class="text-decoration-none text-dark">
+            <div
+              class="dis"
+              style="
+                background-image: url(Assets/img/img-2.jpg);
+                background-size: cover;
+              "
+            >
+              <h3
+                class="pt-4 ps-4 fw-bold"
+                style="
+                  font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+                    'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                "
+              >
+                Men
+              </h3>
+              <h6
+                class="ps-4 fw-bold"
+                style="
+                  color: #918989;
+                  font-family: Cambria, Cochin, Georgia, Times,
+                    'Times New Roman', serif;
+                "
+              >
+                Spring 2018
+              </h6>
+              <button class="btn btn-info text-light fw-bold mt-4 ms-3">
+                Shop Now
+              </button>
+            </div>
+          </a>
+        </div>
+        <div
+          class="col-lg-4 col-md-6 col-sm-12 mt-5"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          <a href="" class="text-decoration-none text-dark">
+            <div
+              class="dis"
+              style="
+                background-image: url(Assets/img/img-3.jpg);
+                background-size: cover;
+              "
+            >
+              <h3
+                class="pt-4 ps-4 fw-bold"
+                style="
+                  font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+                    'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                "
+              >
+                Accesories
+              </h3>
+              <h6
+                class="ps-4 fw-bold"
+                style="
+                  color: #918989;
+                  font-family: Cambria, Cochin, Georgia, Times,
+                    'Times New Roman', serif;
+                "
+              >
+                Spring 2018
+              </h6>
+              <button class="btn btn-info text-light fw-bold mt-5 ms-4">
+                Shop Now
+              </button>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- product -->
+    <div class="container mt-5 mb-5">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-4 mt-5">
+          <h2 class="hdg mt-5 fw-bold">Product Upload</h2>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-8 mt-5">
+          <a href="product.php"
+            ><button
+              class="btn btn-info text-light fw-bold mt-5"
+              style="margin-left: 70%"
+            >
+              Add Product
+            </button></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="container-fluid bg-dark pb-5" style="height: auto">
+      <div class="container mt-5">
+        <div class="row mt-5">
+          <div class="col-lg-3 col-md-3 col-sm-12 mt-5">
+            <h5
+              class="fw-bold text-light mt-5"
+              style="font-family: 'Times New Roman', Times, serif"
+            >
+              CATEGORIES
+            </h5>
+            <p class="lh-base pt-4" style="color: #918989">Men</p>
+            <p class="lh-base" style="color: #918989">Women</p>
+            <p class="lh-base" style="color: #918989">Shoes</p>
+            <p class="lh-base" style="color: #918989">Watches</p>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-12 mt-5">
+            <h5
+              class="fw-bold text-light mt-5"
+              style="font-family: 'Times New Roman', Times, serif"
+            >
+              HELP
+            </h5>
+            <p class="lh-base pt-4" style="color: #918989">Track Order</p>
+            <p class="lh-base" style="color: #918989">Returns</p>
+            <p class="lh-base" style="color: #918989">Shipping</p>
+            <p class="lh-base" style="color: #918989">FAQ's</p>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-12 mt-5">
+            <h5
+              class="fw-bold text-light mt-5"
+              style="font-family: 'Times New Roman', Times, serif"
+            >
+              GET IN TOUCH
+            </h5>
+            <p class="lh-base pt-4" style="color: #918989">
+              Any questions? Let us know in store at 8th floor, 379 Hudson St,
+              New York, NY 10018 or call us on (+1) 96 716
+            </p>
+            <a href="" class="ic"
+              ><i
+                class="fa-brands fa-facebook fs-5 mt-2 me-2"
+                style="color: #918989"
+              ></i
+            ></a>
+            <a href="" class="ic"
+              ><i
+                class="fa-brands fa-instagram fs-5 mt-2 me-2"
+                style="color: #918989"
+              ></i
+            ></a>
+            <a href="" class="ic"
+              ><i
+                class="fa-brands fa-pinterest fs-5 mt-2 me-2"
+                style="color: #918989"
+              ></i
+            ></a>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-12 mt-5">
+            <h5
+              class="fw-bold text-light mt-5"
+              style="font-family: 'Times New Roman', Times, serif"
+            >
+              NEWSLETTER
+            </h5>
+            <input
+              type="text"
+              class="form-control mt-4"
+              placeholder="email@example.com"
+            />
+            <button class="btn btn-info mt-4 text-light fw-bold">
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    AOS.init();
+  </script>
+</html>
