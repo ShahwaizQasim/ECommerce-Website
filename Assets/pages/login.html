@@ -27,7 +27,7 @@
             margin-top: 50px;
           "
         >
-          <form action="" method="post">
+          <form id="Login-Form">
             <h1
               class="text-dark fw-bold text-center mt-3"
               style="font-family: 'Courier New', Courier, monospace"
@@ -38,16 +38,19 @@
               type="email"
               placeholder="Email"
               class="form-control mt-4"
+              id="email2"
               required
             />
             <input
               type="password"
               placeholder="Password"
               class="form-control mt-3 mb-4"
+              id="password2"
               required
             />
+            <div id="message" style="position: relative;left: 10px; margin-bottom: 20px; font-size: 1.3rem; display: flex;justify-content: center"></div>
             <span class="ps-2">Don't have an Account ?</span
-            ><a href="../../sign.html" class="ps-1">Sign up</a>
+            ><a href="../../index.html" class="ps-1">Sign up</a>
             <center>
               <button class="btn btn-dark fw-bold w-25 mt-3 mb-2">
                 Log in
@@ -57,5 +60,8 @@
         </div>
       </div>
     </div>
+
+    <script type="module" src="../scripts/firebase.js"></script>
+    <script type="module" src="../scripts/login.js"></script>
   </body>
 </html>
