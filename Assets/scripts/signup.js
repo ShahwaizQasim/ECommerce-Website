@@ -14,6 +14,7 @@ form.addEventListener("submit", async (event) => {
 
         const result = await createUserWithEmailAndPassword(auth , email, password)
 
+        window.location.href = '../pages/login.html';
         message.innerText = 'Sign Up Successfully';
         console.log(result);
 
