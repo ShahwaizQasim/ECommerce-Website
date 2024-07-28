@@ -1,27 +1,26 @@
-import {auth, createUserWithEmailAndPassword} from "./firebase.js";
+import { auth, createUserWithEmailAndPassword } from "./firebase.js";
 
 const form = document.getElementById("SignUp-Form");
-const message = document.getElementById("message");
+const message = document.querySelector(".message");
 
 form.addEventListener("submit", async (event) => {
-    try {
-        event.preventDefault();
+  try {
+    event.preventDefault();
 
-        const firstName = event.target.children[0].value;
-        const LastName = event.target.children[1].value;
-        const email = event.target.children[2].value;
-        const password = event.target.children[3].value;
+    const fullName = event.target.children[0].value;
+    const mobile = event.target.children[1].value;
+    const email = event.target.children[2].value;
+    const password = event.target.children[3].value;
 
-        const result = await createUserWithEmailAndPassword(auth , email, password)
+    const result = await createUserWithEmailAndPassword(auth, email, password);
 
-        window.location.href = '../pages/login.html';
-        message.innerText = 'Sign Up Successfully';
-        console.log(result);
+    alert(`Congratulations, ${fullName} Your account has been created`);
+    window.location.href = "../pages/login.html";
 
-        event.target.reset();
-        
-    } catch (error) {
-        message.innerText = error.message;
-        console.log("error", error.message);
-    }
-})
+    console.log(result);
+
+    event.target.reset();
+  } catch (error) {
+    message.innerText = error.message.slice(10);
+  }
+});
