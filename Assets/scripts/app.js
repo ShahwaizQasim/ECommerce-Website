@@ -14,3 +14,5 @@ onAuthStateChanged(auth, (user) => {
     window.location = "../pages/login.html";
   }
 });
+
+console.log("shahwaiz");
