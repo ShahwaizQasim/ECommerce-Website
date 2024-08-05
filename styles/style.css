@@ -1,3 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::selection{
+  background-color: white;
+  color: green;
+}
+
 #nav2{
     transition: 1s;
   }
@@ -49,4 +59,56 @@ h1{
 }
 .ic:hover{
     color: #607aee !important;
+}
+
+.allProducts{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.dis5{
+  min-height: 350px;
+  width: 300px;
+  border: 1px solid #666;
+  cursor: pointer;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.dis5:hover{
+  transform: translateY(-10px);
+  box-shadow: 1px 1px 10px #666;
+}
+.dis5> img{
+  height: 55%;
+  width: 100%;
+  margin: a;
+}
+.dis5> h3{
+  text-align: center;
+  font-family: 'poppins';
+  margin-top: 20px;
+}
+.dis5> span{
+  text-align: center;
+  font-family: 'poppins';
+  padding-inline: 10px;
+}
+.dis5> p{
+  text-align: center;
+  font-family: 'poppins';
+  margin-top: 10px;
+}
+.dis5 > button{
+  height: 40px;
+  min-width: 120px !important;
+  outline: none;
+  border: none;
+  color: white;
+  font-family: poppins;
+  background-color: green;
+  border-radius: 10px;
 }

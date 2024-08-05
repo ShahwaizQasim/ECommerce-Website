@@ -6,11 +6,11 @@ onAuthStateChanged(auth, (user) => {
   if (user) {
     // agr user login hai tw direct dashboard pr chla jaye user
     // User is signed in
-    window.location = "./pages/dashboard.html";
+    window.location.href = "./pages/dashboard.html";
   } else {
     // agr user login nhi hai tw login pr chala jaye user
     // User is lop out
-    window.location = "./pages/login.html";
+    window.location.href = "./pages/login.html";
   }
 });
 
