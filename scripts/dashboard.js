@@ -1,6 +1,6 @@
-import { auth, signOut, onAuthStateChanged,onSnapshot,  } from "./firebase.js";
+import { auth, signOut, onAuthStateChanged, onSnapshot } from "./firebase.js";
 
-import { myCollectionRef  } from "./product.js";
+import { myCollectionRef } from "./product.js";
 
 const allProductsPrint = document.querySelector(".allProducts");
 
@@ -28,25 +28,20 @@ logOut_btn.addEventListener("click", async () => {
   }
 });
 
-
 /* Firebase all Products Print */
 
-onSnapshot((myCollectionRef), (doc) => {
+onSnapshot(myCollectionRef, (doc) => {
   // console.log(doc);
   doc.forEach((eachDoc) => {
     const product = eachDoc.data();
-    console.log('product', product);
-    
-    
-  allProductsPrint.innerHTML += `<div class="dis5">
-      <img src="${product.Product_Photo}" alt="product_photo">
+    console.log("product", product);
+
+    allProductsPrint.innerHTML += `<div class="dis5 col-lg-3 col-md-6 col-sm-12">
+      <div class="img-div"><img src="${product.Product_Photo}" alt="product_photo"></div>
       <h3>${product.Product_Name}</h3>
       <span>${product.Product_Detail}</span>
       <p>Price ${product.Product_Price}</p>
       <button class="m-auto">order now</button>
-  </div>`
-    
-    
+  </div>`;
   });
-  
-})
+});
